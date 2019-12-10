@@ -1,0 +1,55 @@
+.container {
+  width: 500px;
+  margin: auto;
+}
+
+.number-buttons-container {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons-container {
+  display: flex;
+  width: 500px;
+}
+
+.result-field {
+  width: 248px;
+}
+
+.operation-btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px 5px;
+}
+
+.operations-buttons-container {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 240px;
+  width: 150px;
+  flex-wrap: wrap;
+  position: relative;
+  left: -19px;
+  align-content: baseline;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  margin: 5px 5px;
+}
+
+.result-field {
+  margin-bottom: 20px;
+}
+
+.number:last-child {
+  position: relative;
+  left: 120px;
+}
+
+.operation-btn {
+
+}

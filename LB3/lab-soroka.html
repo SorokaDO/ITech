@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="./calculator.js" type="application/javascript"></script>
+  <link href="soroka.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container">
+  <div class="text-field-container">
+    <input type="text" readonly class="result-field">
+  </div>
+  <div class="buttons-container">
+    <div class="number-buttons-container">
+      <button class="number" onclick="inputNumber(this)">0</button>
+      <button class="number" onclick="inputNumber(this)">1</button>
+      <button class="number" onclick="inputNumber(this)">2</button>
+      <button class="number" onclick="inputNumber(this)">3</button>
+      <button class="number" onclick="inputNumber(this)">4</button>
+      <button class="number" onclick="inputNumber(this)">5</button>
+      <button class="number" onclick="inputNumber(this)">6</button>
+      <button class="number" onclick="inputNumber(this)">7</button>
+      <button class="number" onclick="inputNumber(this)">8</button>
+      <button class="number" onclick="inputNumber(this)">9</button>
+    </div>
+    <div class="operations-buttons-container">
+      <button class="operation-btn plus" onclick="operation(this)">+</button>
+      <button class="operation-btn minus" onclick="operation(this)">-</button>
+      <button class="operation-btn eq" onclick="getResult()">=</button>
+      <button class="operation-btn divide" onclick="operation(this)">/</button>
+      <button class="operation-btn ml" onclick="operation(this)">*</button>
+      <button class="operation-btn clear" onclick="clearAll()">C</button>
+      <button class="operation-btn remove-last" onclick="removeLastSymbol()"><-</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

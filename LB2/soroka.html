@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="sorokaCss.css" rel="stylesheet">
+  <h1 style="position: absolute;top:5px">text </h1>
+  <style>
+    .third {
+      order: -2;
+    }
+
+    .fourth {
+      order: -1;
+    }
+  </style>
+</head>
+<body>
+<p style="float:right;">TEXT2</p>
+<div class="flex-ex-container" style="display: flex">
+  <div id="first" class="first flex-ex">
+    Я первый
+  </div>
+  <div id="second" class="second flex-ex">
+    Я второй
+  </div>
+  <div id="third" class="third flex-ex">
+    Я третий
+  </div>
+  <div id="fourth" class="fourth flex-ex">
+    Я четвертый
+  </div>
+</div>
+<div class="radio-change-style">
+  <input type="radio" name="tmp" id="first-radio">
+  <label class="radio-label" for="first-radio">First</label>
+  <input type="radio" name="tmp" id="second-radio">
+  <label class="radio-label" for="second-radio">Second</label>
+  <input type="radio" name="tmp" id="third-radio">
+  <label class="radio-label" for="third-radio">Third</label>
+  <input type="radio" name="tmp" id="fourth-radio">
+  <label class="radio-label" for="fourth-radio">Fourth</label>
+</div>
+</body>
+</html>
