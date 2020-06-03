@@ -1,4 +1,6 @@
 <?php require 'connection.php'; ?>
+<?php require 'select/process.php'; ?>
+<?php require 'select/soft.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,17 +14,20 @@
 <body>
 
     <form action="gua.php" method="get">
-        <p><b>список компьютеров с заданным типом центрального процессора</b></p>
+        <p><b>Cписок компьютеров с истекшим гарантийным сроком:</b></p>
         <p>
             <input type="submit">
         </p>
     </form>
 
     <form action="proc.php" method="get">
-        <p><b>список компьютеров с заданным типом центрального процессора</b></p>
+        <p><b>Cписок компьютеров с заданным типом центрального процессора:</b></p>
         <select name="po">
-            <option>i9</option>
-            <option>i7</option>
+            <?php
+      foreach ($outproc as $resb) {
+        echo "<option value=\"$resb\">$resb</option>";
+      }
+      ?>
         </select>
         <p>
             <input type="submit">
@@ -30,10 +35,13 @@
     </form>
 
     <form action="pub.php" method="get">
-        <p><b>Литературе указанного автора</b></p>
+        <p><b>Cписок компьютеров с заданным установленным ПО:</b></p>
         <select name="proc">
-            <option>windows</option>
-            <option>linux</option>
+            <?php
+			foreach ($outsoft as $resb) {
+			echo "<option value=\"$resb\">$resb</option>";
+			}
+      ?>
         </select>
         <p>
             <input type="submit">

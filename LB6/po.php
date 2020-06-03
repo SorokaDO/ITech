@@ -15,7 +15,7 @@ try {
     echo '<?xml version="1.0" encoding="utf8" ?>';
     echo "<root>";
     foreach ($dbh->query($soft) as $row) {
-        echo '<name>'.'netname:' . '&nbsp;' . $row['motherboard'] . '&nbsp;' .'</br>'.'</name>';
+        echo '<name>'.'motherboard:' . '&nbsp;' . $row['motherboard'] . '&nbsp;' .'</br>'.'</name>';
     }
     echo "</root>";
 } catch (PDOException $e) {

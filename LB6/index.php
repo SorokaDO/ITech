@@ -15,7 +15,7 @@
 </head>
 <body>
 <form action="proc.php">
-    <p><b>список компьютеров с заданным типом центрального процессора</b></p>
+    <p><b>Cписок компьютеров с заданным типом ЦП:</b></p>
     <select name="proc" id="">
         <?php
         foreach ($choose as $proc) {
@@ -23,12 +23,12 @@
         }
         ?>
     </select>
-    <p><input type="button" value="Нажми сюда" onclick="getProc();"></p>
+    <p><input type="button" value="Выбрать" onclick="getProc();"></p>
 </form>
 <ul id="result1"></ul>
 
 
-    <p><b>список компьютеров с установленным ПО (название ПО выбирается из перечня)</b></p>
+    <p><b>Список компьютеров с заданным установленным ПО: </b></p>
     <select name="po" id="">
         <?php
         foreach ($po as $type) {
@@ -36,22 +36,22 @@
         }
         ?>
     </select>
-    <p><input type="button" value="Нажми сюда" onclick="getPo();"></p>
+    <p><input type="button" value="Выбрать" onclick="getPo();"></p>
 <ul id="result2"></ul>
 
 
 <form action="no.php">
-    <p><b>список компьютеров с истекшим гарантийным сроком(No это список пк с истекшим сроком)</b></p>
-    <p><input type="button" value="Нажми сюда" onclick="getNo();"></p>
+    <p><b>Список компьютеров с истекшим гарантийным сроком:</b></p>
+    <p><input type="button" value="Показать" onclick="getNo();"></p>
 </form>
 <ul id="result3"></ul>
 
 <form action="add.php">
-    <p><b>список компьютеров с установленным ПО (название ПО выбирается из перечня)</b></p>
+    <p><b>Добавление нового ЦП (ИД, название, частота):</b></p>
     <input type="number" name="id">
     <input type="text" name="name">
     <input type="number" name="freq">
-    <p><input type="submit" value="Выбрать"></p>
+    <p><input type="submit" value="Добавить"></p>
 </form>
 
 </body>
